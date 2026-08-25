@@ -10,7 +10,8 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
+          template: terminal
           filename: metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
           user: ${{ github.repository_owner }}
-          plugin_fetch: yes
+          base: header, metadata
