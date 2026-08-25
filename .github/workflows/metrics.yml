@@ -14,4 +14,4 @@ jobs:
           filename: metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
           user: ${{ github.repository_owner }}
-          base: header, metadata
+          base: header
